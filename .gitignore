@@ -1,16 +1,11 @@
-# Node / build
+# Node / tooling
 node_modules/
-dist/
-*.log
+npm-debug.log*
 
-# WordPress
+# WordPress runtime
 wp-content/uploads/
 wp-content/upgrade/
-wp-content/cache/
-*.sql
-*.sql.gz
 
-# OS / editor
+# Misc
 .DS_Store
-.vscode/
 .env
