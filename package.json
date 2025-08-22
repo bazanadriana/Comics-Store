@@ -1,0 +1,10 @@
+{
+    "scripts": {
+      "dev:css": "sass --style=expanded --no-source-map wp-content/themes/comics-child/scss:wp-content/themes/comics-child --watch",
+      "build:css": "sass --style=expanded --no-source-map wp-content/themes/comics-child/scss:wp-content/themes/comics-child"
+    },
+    "devDependencies": {
+      "sass": "^1.77.0"
+    }
+  }
+  

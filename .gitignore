@@ -1,18 +1,27 @@
-# OS/Editor
-.DS_Store
-.vscode/*
-!.vscode/launch.json
-!.vscode/tasks.json
-
-# Node
-node_modules/
-npm-debug.log*
-
-# WordPress: do not version runtime artifacts
+# WordPress generated
 wp-content/uploads/
 wp-content/cache/
 wp-content/upgrade/
+wp-content/languages/
 
-# DB dumps
+# Plugins: track only our custom plugin
+wp-content/plugins/*
+!wp-content/plugins/comics-filters/
+
+# Themes: track our child theme
+# (Parent theme comes from the WP image, so don't add it)
+
+# Node / builds
+node_modules/
+
+# Backups & dumps
+backup/
 *.sql
-*.sql.gz
+*.tar
+*.tar.gz
+db-volume*.tar.gz
+
+# Editor/OS
+.DS_Store
+.vscode/*
+!.vscode/launch.json
